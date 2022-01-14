@@ -22,7 +22,8 @@ jobs:
         working-directory: ./packages/btp-fe
         run: pwd
         run: yarn build:testnet
-        uses: jakejarvis/s3-sync-action@master
+      - uses: jakejarvis/s3-sync-action@master
+        working-directory: ./packages/btp-fe
         with:
           args: --acl public-read --follow-symlinks --delete
         env:
