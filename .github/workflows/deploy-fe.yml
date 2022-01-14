@@ -17,19 +17,19 @@ jobs:
 
       - uses: actions/checkout@v1
       
-      - run: npm install
+      #- run: npm install
       #- run: npm install --global yarn
       #- run: yarn --version
       
-      - run: pwd
-      - run: cd /home/runner/work/btp-web-demo/btp-web-demo/packages/btp-fe/
-      - run: pwd
-      - run: yarn install
-      - run: yarn --version
-      - run: yarn build:testnet
-      - uses: juliangruber/sleep-action@v1
-        with:
-          time: 120s
+      #- run: pwd
+      #- run: cd /home/runner/work/btp-web-demo/btp-web-demo/packages/btp-fe/
+      #- run: pwd
+      #- run: yarn install
+      #- run: yarn --version
+      #- run: yarn build:testnet
+      #- uses: juliangruber/sleep-action@v1
+      #  with:
+      #    time: 120s
       - uses: jakejarvis/s3-sync-action@master
         with:
           args: --acl public-read --follow-symlinks --delete
