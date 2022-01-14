@@ -16,7 +16,7 @@ jobs:
     steps:
 
       - uses: actions/checkout@v1
-      - run: cd ./packages/btp-fe
+      #- run: cd ./packages/btp-fe
       - run: npm install
       - run: npm install --global yarn
       - run: yarn --version
